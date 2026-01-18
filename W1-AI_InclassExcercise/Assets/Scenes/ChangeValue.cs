@@ -6,7 +6,6 @@ using UnityEngine;
 namespace NodeCanvas.Tasks.Actions {
 
 	public class ChangeValue : ActionTask {
-
         public IndexDebug targetLogger;
 
         //Use for initialization. This is called only once in the lifetime of the task.
