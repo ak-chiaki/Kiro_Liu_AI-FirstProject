@@ -359,6 +359,116 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201116141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201116145}
+  - component: {fileID: 1201116144}
+  - component: {fileID: 1201116143}
+  - component: {fileID: 1201116142}
+  m_Layer: 0
+  m_Name: PowerStation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &1201116142
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201116141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1201116143
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201116141}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 005d47eefef9beb4bbbc671bdd7c5a13, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1201116144
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201116141}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1201116145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201116141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.36, y: 0.74, z: 0.04}
+  m_LocalScale: {x: 1.4263994, y: 1.4263994, z: 1.4263994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858133844
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,10 +728,21 @@ MonoBehaviour:
   _serializedBlackboard: '{"_variables":{"reputation":{"_value":50.0,"_name":"reputation","_id":"a6e02ef2-6473-403a-806b-b8ac7beb08bb","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"moveSpeed":{"_value":2.0,"_name":"moveSpeed","_id":"c9133fa0-9100-4a3f-be93-b722d4abc223","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"spawner":{"_value":1,"_name":"spawner","_id":"3c42218d-d742-4c6c-b89c-d43c06151d6e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"energy":{"_value":100.0,"_name":"energy","_id":"902ceecc-68ad-441f-ad9b-49bd21994580","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energyMin":{"_name":"energyMin","_id":"74601fdd-0582-4762-bb29-107013838206","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energyMax":{"_value":100.0,"_name":"energyMax","_id":"411ca511-22ef-4288-b47c-6b22aab27064","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energyDrainPerSec":{"_value":8.0,"_name":"energyDrainPerSec","_id":"c5fac7b5-91f5-4921-8d40-0a2b251264a3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energyLowThreshold":{"_value":20.0,"_name":"energyLowThreshold","_id":"f7098e31-d415-4aad-8398-962a914bc13a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"powerStation":{"_value":2,"_name":"powerStation","_id":"cbaa16c5-b514-4eeb-8d66-b660367d2d46","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"stationReachDistance":{"_value":1.0,"_name":"stationReachDistance","_id":"49d6021a-e54e-4c9b-92c6-c246b912573d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energyChargePerSec":{"_value":8.0,"_name":"energyChargePerSec","_id":"44e4117d-edf4-43b9-95ca-4b221d186579","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"stationChargeDistance":{"_value":1.3,"_name":"stationChargeDistance","_id":"1e76be32-bd94-4001-9826-023360f8c89c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"isCharging":{"_name":"isCharging","_id":"517b7845-67a7-4dd9-8125-690b1abd8138","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 732763223}
+  - {fileID: 1201116145}
   _serializedVariables:
   - _json: '{"_value":50.0,"_name":"reputation","_id":"a6e02ef2-6473-403a-806b-b8ac7beb08bb","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
@@ -634,6 +755,38 @@ MonoBehaviour:
     _references:
     - {fileID: 0}
     - {fileID: 732763223}
+  - _json: '{"_value":100.0,"_name":"energy","_id":"902ceecc-68ad-441f-ad9b-49bd21994580","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"energyMin","_id":"74601fdd-0582-4762-bb29-107013838206","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":100.0,"_name":"energyMax","_id":"411ca511-22ef-4288-b47c-6b22aab27064","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":8.0,"_name":"energyDrainPerSec","_id":"c5fac7b5-91f5-4921-8d40-0a2b251264a3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":20.0,"_name":"energyLowThreshold","_id":"f7098e31-d415-4aad-8398-962a914bc13a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":1,"_name":"powerStation","_id":"cbaa16c5-b514-4eeb-8d66-b660367d2d46","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references:
+    - {fileID: 0}
+    - {fileID: 1201116145}
+  - _json: '{"_value":1.0,"_name":"stationReachDistance","_id":"49d6021a-e54e-4c9b-92c6-c246b912573d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":8.0,"_name":"energyChargePerSec","_id":"44e4117d-edf4-43b9-95ca-4b221d186579","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":1.3,"_name":"stationChargeDistance","_id":"1e76be32-bd94-4001-9826-023360f8c89c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"isCharging","_id":"517b7845-67a7-4dd9-8125-690b1abd8138","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
 --- !u!114 &2047368181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,16 +800,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"spawnerObj":{"_name":"spawner","_targetVariableID":"3c42218d-d742-4c6c-b89c-d43c06151d6e"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"c9133fa0-9100-4a3f-be93-b722d4abc223"},"$type":"NodeCanvas.Tasks.Actions.MoveToCrystal"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Seek
-    Yellow","_position":{"x":253.9999,"y":450.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"spawnerObj":{"_name":"spawner","_targetVariableID":"3c42218d-d742-4c6c-b89c-d43c06151d6e"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"c9133fa0-9100-4a3f-be93-b722d4abc223"},"chaseYellow":false,"$type":"NodeCanvas.Tasks.Actions.MoveToCrystal"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Seek
-    Purple","_position":{"x":420.6667,"y":248.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"reputation":{"_name":"reputation","_targetVariableID":"a6e02ef2-6473-403a-806b-b8ac7beb08bb"},"threshold":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.RepAtOrAboveCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"reputation":{"_name":"reputation","_targetVariableID":"a6e02ef2-6473-403a-806b-b8ac7beb08bb"},"threshold":{},"$type":"NodeCanvas.Tasks.Conditions.RepAtOrBelowCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
-  _boundGraphObjectReferences: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"spawnerObj":{"_name":"spawner","_targetVariableID":"3c42218d-d742-4c6c-b89c-d43c06151d6e"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"c9133fa0-9100-4a3f-be93-b722d4abc223"},"charging":{"_name":"isCharging","_targetVariableID":"517b7845-67a7-4dd9-8125-690b1abd8138"},"$type":"NodeCanvas.Tasks.Actions.MoveToCrystal"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Seek
+    Yellow","_position":{"x":180.9999,"y":403.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"spawnerObj":{"_name":"spawner","_targetVariableID":"3c42218d-d742-4c6c-b89c-d43c06151d6e"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"c9133fa0-9100-4a3f-be93-b722d4abc223"},"charging":{"_name":"isCharging","_targetVariableID":"517b7845-67a7-4dd9-8125-690b1abd8138"},"chaseYellow":false,"$type":"NodeCanvas.Tasks.Actions.MoveToCrystal"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Seek
+    Purple","_position":{"x":537.6667,"y":274.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_nestedFSM":{"_value":1},"_position":{"x":365.8145,"y":649.2954},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"2"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"energy":{"_name":"energy","_targetVariableID":"902ceecc-68ad-441f-ad9b-49bd21994580"},"drainPerSec":{"_name":"energyDrainPerSec","_targetVariableID":"c5fac7b5-91f5-4921-8d40-0a2b251264a3"},"minValue":{"_name":"energyMin","_targetVariableID":"74601fdd-0582-4762-bb29-107013838206"},"charging":{"_name":"isCharging","_targetVariableID":"517b7845-67a7-4dd9-8125-690b1abd8138"},"$type":"NodeCanvas.Tasks.Actions.EnergyDrainAT"}]},"_position":{"x":302.0,"y":135.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_condition":{"reputation":{"_name":"reputation","_targetVariableID":"a6e02ef2-6473-403a-806b-b8ac7beb08bb"},"threshold":{"_value":100.0},"$type":"NodeCanvas.Tasks.Conditions.RepAtOrAboveCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"902ceecc-68ad-441f-ad9b-49bd21994580"},"threshold":{"_name":"energyLowThreshold","_targetVariableID":"f7098e31-d415-4aad-8398-962a914bc13a"},"$type":"NodeCanvas.Tasks.Conditions.EnergyBelowCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"reputation":{"_name":"reputation","_targetVariableID":"a6e02ef2-6473-403a-806b-b8ac7beb08bb"},"threshold":{},"$type":"NodeCanvas.Tasks.Conditions.RepAtOrBelowCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"902ceecc-68ad-441f-ad9b-49bd21994580"},"threshold":{"_name":"energyLowThreshold","_targetVariableID":"f7098e31-d415-4aad-8398-962a914bc13a"},"$type":"NodeCanvas.Tasks.Conditions.EnergyBelowCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"902ceecc-68ad-441f-ad9b-49bd21994580"},"threshold":{"_name":"energyMax","_targetVariableID":"411ca511-22ef-4288-b47c-6b22aab27064"},"$type":"NodeCanvas.Tasks.Conditions.EnergyAtOrAboveCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"902ceecc-68ad-441f-ad9b-49bd21994580"},"threshold":{"_name":"energyMax","_targetVariableID":"411ca511-22ef-4288-b47c-6b22aab27064"},"$type":"NodeCanvas.Tasks.Conditions.EnergyAtOrAboveCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: acbf5c8ad34df494e95e46567d12915e, type: 2}
   _boundGraphSource:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
-    _zoomFactor: 1
+    _translation: {x: 31.17864, y: -72.004036}
+    _zoomFactor: 0.75008714
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -749,3 +904,4 @@ SceneRoots:
   - {fileID: 2047368179}
   - {fileID: 732763225}
   - {fileID: 1988620823}
+  - {fileID: 1201116145}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: subFSMplayerEnergyRefill
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"powerStation":{"_name":"powerStation","_targetVariableID":"cbaa16c5-b514-4eeb-8d66-b660367d2d46"},"moveSpeed":{"_name":"moveSpeed","_targetVariableID":"c9133fa0-9100-4a3f-be93-b722d4abc223"},"reachDistance":{"_name":"stationReachDistance","_targetVariableID":"49d6021a-e54e-4c9b-92c6-c246b912573d"},"$type":"NodeCanvas.Tasks.Actions.MoveToPowerStationAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"SeekPowerStation","_position":{"x":203.0,"y":349.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"energy":{"_name":"energy","_targetVariableID":"902ceecc-68ad-441f-ad9b-49bd21994580"},"chargePerSec":{"_name":"energyChargePerSec","_targetVariableID":"44e4117d-edf4-43b9-95ca-4b221d186579"},"maxValue":{"_name":"energyMax","_targetVariableID":"411ca511-22ef-4288-b47c-6b22aab27064"},"inCharging":{"_name":"isCharging","_targetVariableID":"517b7845-67a7-4dd9-8125-690b1abd8138"},"$type":"NodeCanvas.Tasks.Actions.RechargeEnergyAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"RefillEnergy","_position":{"x":524.0,"y":490.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"powerStation":{"_name":"powerStation","_targetVariableID":"cbaa16c5-b514-4eeb-8d66-b660367d2d46"},"range":{"_name":"stationChargeDistance","_targetVariableID":"1e76be32-bd94-4001-9826-023360f8c89c"},"$type":"NodeCanvas.Tasks.Conditions.InRangeOfStationCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.33
+    _category: 
+    _comments: 
+    _translation: {x: 60, y: 89}
+    _zoomFactor: 0.6516923
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}

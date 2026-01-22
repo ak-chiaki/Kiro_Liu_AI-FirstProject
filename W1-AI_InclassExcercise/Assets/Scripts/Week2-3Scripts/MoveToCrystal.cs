@@ -9,6 +9,7 @@ namespace NodeCanvas.Tasks.Actions {
 
         public BBParameter<GameObject> spawnerObj;
         public BBParameter<float> moveSpeed;
+		public BBParameter<bool> charging;
         public bool chaseYellow = true;
 
 
@@ -37,6 +38,8 @@ namespace NodeCanvas.Tasks.Actions {
             to.y = 0f;
 
             agent.transform.position += to.normalized * moveSpeed.value * Time.deltaTime;
+
+			charging.value = false;
 
         }
 
