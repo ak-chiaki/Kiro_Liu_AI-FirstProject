@@ -99,9 +99,17 @@ namespace NodeCanvas.Tasks.Actions
 
             if (nav != null)
             {
-                nav.isStopped = false;
-                nav.ResetPath();
-                nav.SetDestination(riverTarget.value.position);
+                if (nav.isOnNavMesh) 
+                {
+                    nav.isStopped = false;
+                    nav.ResetPath();
+                    nav.SetDestination(riverTarget.value.position);
+                }
+                else 
+                {
+                    EndAction(false); 
+                    return; 
+                }
             }
         }
 
@@ -124,6 +132,12 @@ namespace NodeCanvas.Tasks.Actions
             {
                 EndAction(false);
                 return;
+            }
+
+            if (!nav.isOnNavMesh) 
+            {
+                EndAction(false); 
+                return; 
             }
 
             if (!arrived)
@@ -170,9 +184,13 @@ namespace NodeCanvas.Tasks.Actions
         {
             if (nav != null)
             {
-                nav.isStopped = false;
-                nav.ResetPath();
+                if (nav.isOnNavMesh)
+                {
+                    nav.isStopped = false;
+                    nav.ResetPath();
+                }
             }
+
             if (spawnedVfx != null)
             {
                 Object.Destroy(spawnedVfx.gameObject);

@@ -57,7 +57,10 @@ namespace NodeCanvas.Tasks.Actions
 
             if (nav != null)
             {
-                nav.isStopped = false;
+                if (nav.isOnNavMesh) 
+                {
+                    nav.isStopped = false;
+                }
             }
         }
 
@@ -76,8 +79,11 @@ namespace NodeCanvas.Tasks.Actions
 
                     if (nav != null)
                     {
-                        nav.isStopped = false;
-                        nav.SetDestination(commandPos);
+                        if (nav.isOnNavMesh) 
+                        {
+                            nav.isStopped = false;
+                            nav.SetDestination(commandPos);
+                        }
                     }
                 }
             }
@@ -91,7 +97,10 @@ namespace NodeCanvas.Tasks.Actions
                         if (!nav.pathPending &&
                             nav.remainingDistance <= nav.stoppingDistance + 0.05f)
                         {
-                            nav.isStopped = true;
+                            if (nav.isOnNavMesh) 
+                            {
+                                nav.isStopped = true;
+                            }
                             isStaying = true;
                             stayTimer = 0f;
                         }
@@ -104,8 +113,12 @@ namespace NodeCanvas.Tasks.Actions
                     {
                         if (nav != null)
                         {
-                            nav.isStopped = false;
+                            if (nav.isOnNavMesh) 
+                            {
+                                nav.isStopped = false;
+                            }
                         }
+
                         isPlayerCommand = false;
                         isStaying = false;
                         stayTimer = 0f;
@@ -118,6 +131,11 @@ namespace NodeCanvas.Tasks.Actions
             // random wandering
             if (nav != null)
             {
+                if (!nav.isOnNavMesh) 
+                {
+                    return;
+                }
+
                 if (!nav.pathPending &&
                     nav.remainingDistance <= nav.stoppingDistance + repathDistance)
                 {
@@ -142,8 +160,11 @@ namespace NodeCanvas.Tasks.Actions
 
             if (nav != null)
             {
-                nav.ResetPath();
-                nav.isStopped = true;
+                if (nav.isOnNavMesh) 
+                {
+                    nav.ResetPath();
+                    nav.isStopped = true;
+                }
             }
 
             isPlayerCommand = false;
